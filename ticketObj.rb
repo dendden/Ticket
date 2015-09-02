@@ -19,12 +19,10 @@ def ticket.price
 end
 
 puts "*** This ticket is for: ***"
-print ticket.event + " at "
-print ticket.venue + " on "
-puts ticket.date + "."
+puts "#{ticket.event} at #{ticket.venue} on #{ticket.date}."
 puts "*** The performer is: ***"
-puts ticket.performer + "."
+puts "#{ticket.performer}."
 puts "*** The seat is: ***"
-puts ticket.seat + "."
+puts "#{ticket.seat}."
 puts "$$$ Ticket price: $$$"
-puts "$" + "%.2f." % ticket.price
+puts "$#{"%.2f." % ticket.price}"
